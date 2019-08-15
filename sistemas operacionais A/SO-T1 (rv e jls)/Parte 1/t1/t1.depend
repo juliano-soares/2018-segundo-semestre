@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1544414566 source:c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 1\buffer.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<pthread.h>
+	"buffer.h"
+	"fila.h"
+
+1544414566 c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 1\buffer.h
+
+1544414566 c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 1\fila.h
+
+1544414566 source:c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 1\fila.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	"fila.h"
+
+1544414566 source:c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<pthread.h>
+	<time.h>
+	"buffer.h"
+

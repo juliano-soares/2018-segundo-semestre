@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1544414566 source:c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 4\buffer.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<pthread.h>
+	"buffer.h"
+	"pacote.h"
+	"fila.h"
+
+1544414566 c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 4\buffer.h
+
+1544414566 c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 4\pacote.h
+	"buffer.h"
+
+1544414566 c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 4\fila.h
+
+1544414566 source:c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 4\disquete.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"disquete.h"
+
+1544414566 c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 4\disquete.h
+	<stdbool.h>
+
+1544414566 source:c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 4\fila.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	"fila.h"
+
+1544414566 source:c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	"disquete.h"
+	"buffer.h"
+	"pacote.h"
+
+1544414566 source:c:\users\juliano\downloads\so-t1-rv-e-jls\so-t1 (rv e jls)\parte 4\pacote.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"pacote.h"
+	"disquete.h"
+

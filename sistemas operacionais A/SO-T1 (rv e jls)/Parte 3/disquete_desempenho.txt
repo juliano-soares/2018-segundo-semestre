@@ -1,0 +1,158 @@
+
+            --- LEITURA SEQUENCIAL ---
+
+   LEITURA SEQUENCIAL de 50 blocos e fator 0:
+   Tempo total: 1563ms
+   Tempo medio por bloco: 31ms
+
+   LEITURA SEQUENCIAL de 50 blocos e fator 1:
+   Tempo total: 2802ms
+   Tempo medio por bloco: 56ms
+
+   LEITURA SEQUENCIAL de 50 blocos e fator 2:
+   Tempo total: 3916ms
+   Tempo medio por bloco: 78ms
+
+   LEITURA SEQUENCIAL de 50 blocos e fator 3:
+   Tempo total: 4773ms
+   Tempo medio por bloco: 95ms
+
+   LEITURA SEQUENCIAL de 50 blocos e fator 4:
+   Tempo total: 5916ms
+   Tempo medio por bloco: 118ms
+
+   LEITURA SEQUENCIAL de 50 blocos e fator 5:
+   Tempo total: 6875ms
+   Tempo medio por bloco: 138ms
+
+   LEITURA SEQUENCIAL de 50 blocos e fator 6:
+   Tempo total: 7990ms
+   Tempo medio por bloco: 160ms
+
+   LEITURA SEQUENCIAL de 50 blocos e fator 7:
+   Tempo total: 8965ms
+   Tempo medio por bloco: 179ms
+
+   LEITURA SEQUENCIAL de 50 blocos e fator 8:
+   Tempo total: 10209ms
+   Tempo medio por bloco: 204ms
+
+
+
+            --- LEITURA ALEATORIA ---
+
+   LEITURA ALEATORIA de 50 blocos e fator 0:
+   Tempo total: 10159ms
+   Tempo medio por bloco: 203ms
+
+   LEITURA ALEATORIA de 50 blocos e fator 1:
+   Tempo total: 10131ms
+   Tempo medio por bloco: 203ms
+
+   LEITURA ALEATORIA de 50 blocos e fator 2:
+   Tempo total: 10107ms
+   Tempo medio por bloco: 202ms
+
+   LEITURA ALEATORIA de 50 blocos e fator 3:
+   Tempo total: 8629ms
+   Tempo medio por bloco: 173ms
+
+   LEITURA ALEATORIA de 50 blocos e fator 4:
+   Tempo total: 8375ms
+   Tempo medio por bloco: 168ms
+
+   LEITURA ALEATORIA de 50 blocos e fator 5:
+   Tempo total: 10617ms
+   Tempo medio por bloco: 212ms
+
+   LEITURA ALEATORIA de 50 blocos e fator 6:
+   Tempo total: 9940ms
+   Tempo medio por bloco: 199ms
+
+   LEITURA ALEATORIA de 50 blocos e fator 7:
+   Tempo total: 11111ms
+   Tempo medio por bloco: 222ms
+
+   LEITURA ALEATORIA de 50 blocos e fator 8:
+   Tempo total: 10236ms
+   Tempo medio por bloco: 205ms
+
+
+
+            --- ESCRITA SEQUENCIAL ---
+
+   ESCRITA SEQUENCIAL de 50 blocos e fator 0:
+   Tempo total: 1676ms
+   Tempo medio por bloco: 34ms
+
+   ESCRITA SEQUENCIAL de 50 blocos e fator 1:
+   Tempo total: 2659ms
+   Tempo medio por bloco: 53ms
+
+   ESCRITA SEQUENCIAL de 50 blocos e fator 2:
+   Tempo total: 3620ms
+   Tempo medio por bloco: 72ms
+
+   ESCRITA SEQUENCIAL de 50 blocos e fator 3:
+   Tempo total: 4661ms
+   Tempo medio por bloco: 93ms
+
+   ESCRITA SEQUENCIAL de 50 blocos e fator 4:
+   Tempo total: 5666ms
+   Tempo medio por bloco: 113ms
+
+   ESCRITA SEQUENCIAL de 50 blocos e fator 5:
+   Tempo total: 6827ms
+   Tempo medio por bloco: 137ms
+
+   ESCRITA SEQUENCIAL de 50 blocos e fator 6:
+   Tempo total: 7956ms
+   Tempo medio por bloco: 159ms
+
+   ESCRITA SEQUENCIAL de 50 blocos e fator 7:
+   Tempo total: 9129ms
+   Tempo medio por bloco: 183ms
+
+   ESCRITA SEQUENCIAL de 50 blocos e fator 8:
+   Tempo total: 9888ms
+   Tempo medio por bloco: 198ms
+
+
+
+            --- ESCRITA ALEATORIA ---
+
+   ESCRITA ALEATORIA de 50 blocos e fator 0:
+   Tempo total: 9823ms
+   Tempo medio por bloco: 196ms
+
+   ESCRITA ALEATORIA de 50 blocos e fator 1:
+   Tempo total: 8954ms
+   Tempo medio por bloco: 179ms
+
+   ESCRITA ALEATORIA de 50 blocos e fator 2:
+   Tempo total: 9128ms
+   Tempo medio por bloco: 183ms
+
+   ESCRITA ALEATORIA de 50 blocos e fator 3:
+   Tempo total: 10246ms
+   Tempo medio por bloco: 205ms
+
+   ESCRITA ALEATORIA de 50 blocos e fator 4:
+   Tempo total: 9751ms
+   Tempo medio por bloco: 195ms
+
+   ESCRITA ALEATORIA de 50 blocos e fator 5:
+   Tempo total: 9921ms
+   Tempo medio por bloco: 198ms
+
+   ESCRITA ALEATORIA de 50 blocos e fator 6:
+   Tempo total: 10224ms
+   Tempo medio por bloco: 204ms
+
+   ESCRITA ALEATORIA de 50 blocos e fator 7:
+   Tempo total: 9635ms
+   Tempo medio por bloco: 193ms
+
+   ESCRITA ALEATORIA de 50 blocos e fator 8:
+   Tempo total: 9426ms
+   Tempo medio por bloco: 189ms
