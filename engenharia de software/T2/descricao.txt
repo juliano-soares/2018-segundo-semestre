@@ -1,0 +1,3 @@
+Artefatos a serem produzidos e entregues:
+[1] Diagrama UML de Classes (com multiplicidade, atributos e métodos principais, visibilidade de métodos e atributos)
+Entrega e apresentação: 30/10/2018

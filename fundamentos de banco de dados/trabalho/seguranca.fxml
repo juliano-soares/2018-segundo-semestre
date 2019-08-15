@@ -1,0 +1,2066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import jfxtras.labs.icalendaragenda.internal.scene.control.skin.agenda.base24hour.*?>
+<?import jfxtras.labs.scene.control.*?>
+<?import jfxtras.scene.control.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Accordion prefHeight="800.0" prefWidth="1301.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detran_ii.FXMLDocumentController">
+  <panes>
+    <TitledPane animated="false" prefHeight="782.0" prefWidth="1200.0" text="Veiculo">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Pesquisar Veiculo">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="7.0" maxWidth="1.7976931348623157E308" prefHeight="707.0" prefWidth="1301.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <GridPane layoutX="14.0" layoutY="38.0" prefHeight="96.0" prefWidth="395.0">
+                                       <children>
+                                          <Label text="Chassi" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" />
+                                          <Label text="Placa" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="722.0" minWidth="10.0" prefWidth="88.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="797.0" minWidth="0.0" prefWidth="307.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <Pane layoutX="7.0" layoutY="140.0" maxWidth="1.7976931348623157E308" prefHeight="550.0" prefWidth="924.0" style="-fx-background-color: #123456;">
+                                       <children>
+                                          <TableView layoutX="3.0" layoutY="-1.0" prefHeight="522.0" prefWidth="920.0">
+                                             <columns>
+                                                <TableColumn prefWidth="111.0" text="Placa" />
+                                                <TableColumn prefWidth="159.0" text="Chassi" />
+                                                <TableColumn prefWidth="142.0" text="Cor" />
+                                                <TableColumn prefWidth="114.0" text="Ano Fabric." />
+                                                <TableColumn prefWidth="107.0" text="Categ." />
+                                                <TableColumn minWidth="0.0" prefWidth="106.0" text="Modelo" />
+                                                <TableColumn prefWidth="180.0" text="CPF Proprietario" />
+                                                <TableColumn prefWidth="214.0" text="Placa Veiculo" />
+                                                <TableColumn prefWidth="146.0" text="Proprietario(CPF)" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                    <Button layoutX="444.0" layoutY="37.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="168.0" text="CONSULTAR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="621.0" layoutY="93.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="165.0" text="EDITAR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="447.0" layoutY="93.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="163.0" text="EXCLUIR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Label layoutX="521.0" layoutY="1.0" text="ESCOLHA O TIPO DE PESQUISA" textFill="RED">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="622.0" layoutY="37.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="162.0" text="PESQUISAR TODOS">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="794.0" layoutY="37.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="138.0" text="LIMPAR CAMPOS">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <GridPane layoutX="918.0" layoutY="1.0" prefHeight="649.0" prefWidth="369.0">
+                                       <children>
+                                          <Label text="Chassi:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="PLACA:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Dados Do veiculo " textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Cor:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Dados do Proprietario" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Ano fabric.:" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Nome:" textFill="WHITE" GridPane.rowIndex="8">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CPF:" textFill="WHITE" GridPane.rowIndex="9">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Idade:" textFill="WHITE" GridPane.rowIndex="10">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="DT_nasc.:" textFill="WHITE" GridPane.rowIndex="11">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Sexo:" textFill="WHITE" GridPane.rowIndex="12">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Dados Endereço:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CEP:" textFill="WHITE" GridPane.rowIndex="15">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Estado:" textFill="WHITE" GridPane.rowIndex="14">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Cidade:" textFill="WHITE" GridPane.rowIndex="16">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Desc.:" textFill="WHITE" GridPane.rowIndex="17">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Categoria:" textFill="WHITE" GridPane.rowIndex="5">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Modelo:" textFill="WHITE" GridPane.rowIndex="6">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="321.0" minWidth="10.0" prefWidth="89.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="506.0" minWidth="10.0" prefWidth="232.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="218.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="374.0" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <Button layoutX="794.0" layoutY="93.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="138.0" text="VER INFRAÇÕES">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <contextMenu>
+                                          <ContextMenu>
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                            </items>
+                                          </ContextMenu>
+                                       </contextMenu>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Cadastrar/Editar Veiculo">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="60.0" layoutY="79.0" />
+                              <Pane layoutX="518.0" layoutY="2.0" maxWidth="1.7976931348623157E308" prefHeight="291.0" prefWidth="375.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="1.0" layoutY="160.0" prefHeight="132.0" prefWidth="374.0">
+                                       <columns>
+                                          <TableColumn prefWidth="49.0" text="ID" />
+                                          <TableColumn prefWidth="324.0" text="Descrição" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="98.0" prefWidth="370.0">
+                                       <children>
+                                          <Label text="ID:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="DESCRIÇÃO:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="36.0" prefWidth="322.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="TIPOS DE CATEGORIAS DE VEICULOS" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="87.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <Button layoutX="210.0" layoutY="106.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="115.0" text="Selecionar">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="122.0" layoutY="106.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Consultar">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="916.0" layoutY="2.0" maxWidth="1.7976931348623157E308" prefHeight="292.0" prefWidth="377.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="2.0" layoutY="160.0" prefHeight="129.0" prefWidth="374.0">
+                                       <columns>
+                                          <TableColumn prefWidth="49.0" text="ID" />
+                                          <TableColumn prefWidth="324.0" text="Descrição" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="98.0" prefWidth="370.0">
+                                       <children>
+                                          <Label text="ID:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="DESCRIÇÃO:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="36.0" prefWidth="322.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="TIPOS DE CATEGORIAS DE VEICULOS" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="87.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <Button layoutX="210.0" layoutY="106.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="115.0" text="Selecionar">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="122.0" layoutY="106.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Consultar">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="5.0" layoutY="2.0" maxWidth="1.7976931348623157E308" prefHeight="290.0" prefWidth="505.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="188.0" prefWidth="502.0">
+                                       <children>
+                                          <Label text="PLACA:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CHASSI:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="36.0" prefWidth="322.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="CADASTRO DE VEICULOS" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="COR:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="ANO FABRICAÇÃO:" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="36.0" prefWidth="322.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="87.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <Button layoutX="278.0" layoutY="235.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="115.0" text="CANCELAR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="183.0" layoutY="235.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="INSERIR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="5.0" layoutY="300.0" maxWidth="1.7976931348623157E308" prefHeight="361.0" prefWidth="1290.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="1.0" layoutY="108.0" prefHeight="256.0" prefWidth="1287.0">
+                                       <columns>
+                                          <TableColumn prefWidth="60.0" text="CPF" />
+                                          <TableColumn prefWidth="101.0" text="Nome" />
+                                          <TableColumn prefWidth="57.0" text="idade" />
+                                          <TableColumn prefWidth="126.0" text="Data Nasc." />
+                                          <TableColumn prefWidth="150.0" text="Sexo" />
+                                          <TableColumn prefWidth="138.0" text="Telefone" />
+                                          <TableColumn prefWidth="138.0" text="CEP" />
+                                          <TableColumn prefWidth="138.0" text="Endereço" />
+                                          <TableColumn prefWidth="138.0" text="CIdade" />
+                                          <TableColumn prefWidth="236.0" text="Estado" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="98.0" prefWidth="1284.0">
+                                       <children>
+                                          <Label text="CPF:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="NOME:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="SELECIONAR PROPRIETARIO DO VEICULO" textFill="#ee0606" GridPane.columnIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="115.0" text="Selecionar" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="38.0" prefWidth="291.0" text="Consultar" GridPane.columnIndex="4">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="110.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="334.0" minWidth="10.0" prefWidth="301.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="88.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="344.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="344.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Configurações para Cadastro">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="420.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="3.0" layoutY="251.0" prefHeight="353.0" prefWidth="412.0">
+                                       <columns>
+                                          <TableColumn prefWidth="49.0" text="ID" />
+                                          <TableColumn prefWidth="249.0" text="Descrição" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="180.0" prefWidth="412.0">
+                                       <children>
+                                          <Label text="ID:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="DESCRIÇÃO:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="84.0" prefWidth="268.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="TIPOS DE CATEGORIAS DE VEICULOS" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="87.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="103.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="10.0" layoutY="188.0">
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="440.0" maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="420.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="3.0" layoutY="251.0" prefHeight="353.0" prefWidth="412.0">
+                                       <columns>
+                                          <TableColumn prefWidth="49.0" text="ID" />
+                                          <TableColumn prefWidth="249.0" text="Descrição" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="180.0" prefWidth="412.0">
+                                       <children>
+                                          <Label text="ID:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="DESCRIÇÃO:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="84.0" prefWidth="268.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="MODELOS DE VEICULOS" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="87.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="103.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="10.0" layoutY="188.0">
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                              <Button layoutX="14.0" layoutY="622.0" mnemonicParsing="false" text="LIMPAR CAMPOS" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Ver Infrações de um Veiculo">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="1301.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <GridPane layoutX="3.0" prefHeight="217.0" prefWidth="725.0">
+                                       <children>
+                                          <Label text="Chassi:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="PLACA:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Dados Do veiculo " textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Cor:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Dados do Proprietario" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Ano fabric.:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Nome:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CPF:" textFill="WHITE" GridPane.rowIndex="5">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Categoria:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Modelo:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="321.0" minWidth="10.0" prefWidth="89.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="506.0" minWidth="10.0" prefWidth="232.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="506.0" minWidth="10.0" prefWidth="142.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="506.0" minWidth="10.0" prefWidth="292.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="218.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="374.0" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <TableView layoutY="217.0" prefHeight="418.0" prefWidth="1301.0">
+                                       <columns>
+                                          <TableColumn prefWidth="111.0" text="ID Infração" />
+                                          <TableColumn prefWidth="116.0" text="Valor da Infração" />
+                                          <TableColumn prefWidth="167.0" text="Velocidade" />
+                                          <TableColumn prefWidth="100.0" text="Hora" />
+                                          <TableColumn prefWidth="110.0" text="Data" />
+                                          <TableColumn prefWidth="144.0" text="Tipo Infração" />
+                                          <TableColumn prefWidth="111.0" text="Agente de trans." />
+                                          <TableColumn maxWidth="215.0" prefWidth="143.0" text="Id do Local" />
+                                          <TableColumn prefWidth="120.0" text="Posição Geografica" />
+                                          <TableColumn minWidth="0.0" prefWidth="172.0" text="Vel. Permitida" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </Pane>
+                              <Button layoutX="14.0" layoutY="622.0" mnemonicParsing="false" text="LIMPAR CAMPOS" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </content></TitledPane>
+    <TitledPane animated="false" prefHeight="800.0" prefWidth="1500.0" text="Infrações">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Pesquisar Infração">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane maxWidth="1.7976931348623157E308" prefHeight="707.0" prefWidth="1301.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <GridPane layoutX="14.0" layoutY="40.0" prefHeight="208.0" prefWidth="1078.0">
+                                       <children>
+                                          <Label text="Hora:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Valor da Infração:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" />
+                                          <TextField prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="3" />
+                                          <Label text="ID da Infração:" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Data:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker prefHeight="25.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Label text="TIPO DE INFRAÇÃO" textFill="WHITE" GridPane.columnIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="ID LOCAL INFRAÇÃO" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="AGENTE DE TRANSITO" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="PLACA VEICULO" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CPF DO PROP. VEICULO" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="126.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="391.0" minWidth="10.0" prefWidth="298.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="391.0" minWidth="10.0" prefWidth="335.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="391.0" minWidth="10.0" prefWidth="335.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="58.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="92.0" minHeight="0.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <Pane layoutX="7.0" layoutY="260.0" maxWidth="1.7976931348623157E308" prefHeight="430.0" prefWidth="1291.0" style="-fx-background-color: #123456;">
+                                       <children>
+                                          <TableView layoutX="3.0" prefHeight="426.0" prefWidth="1287.0">
+                                             <columns>
+                                                <TableColumn prefWidth="111.0" text="ID Infração" />
+                                                <TableColumn prefWidth="140.0" text="Valor da Infração" />
+                                                <TableColumn prefWidth="132.0" text="Hora" />
+                                                <TableColumn prefWidth="166.0" text="Data" />
+                                                <TableColumn prefWidth="146.0" text="Tipo Infração" />
+                                                <TableColumn prefWidth="146.0" text="Id do Local" />
+                                                <TableColumn prefWidth="146.0" text="Agente de trans." />
+                                                <TableColumn prefWidth="146.0" text="Placa Veiculo" />
+                                                <TableColumn prefWidth="146.0" text="Proprietario(CPF)" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                    <Button layoutX="1106.0" layoutY="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="168.0" text="CONSULTAR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="1106.0" layoutY="57.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="165.0" text="EDITAR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="1107.0" layoutY="103.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="163.0" text="EXCLUIR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Label layoutX="521.0" layoutY="1.0" text="ESCOLHA O TIPO DE PESQUISA" textFill="RED">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="1107.0" layoutY="154.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="162.0" text="PESQUISAR TODOS">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="1107.0" layoutY="207.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="162.0" text="LIMPAR CAMPOS">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Cadastrar/Editar Infração">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane maxWidth="1.7976931348623157E308" prefHeight="707.0" prefWidth="1301.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <GridPane layoutX="14.0" layoutY="14.0" prefHeight="188.0" prefWidth="441.0">
+                                       <children>
+                                          <Label text="Hora:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Valor da Infração:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="ID da Infração:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CADASTRO DE  INFRAÇÕES" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Data:" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker prefHeight="25.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="106.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="391.0" minWidth="10.0" prefWidth="335.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="58.0" minHeight="0.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="895.0" layoutY="7.0" prefHeight="144.0" prefWidth="399.0">
+                                       <children>
+                                          <Label text="Chassi:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="PLACA:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="SELECIONAR VEICULO" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <HBox prefHeight="41.0" prefWidth="306.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <children>
+                                                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="178.0" text="Consultar" />
+                                                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="183.0" text="Selecionar" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="75.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="324.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="102.0" minHeight="0.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <Pane layoutX="7.0" layoutY="292.0" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="444.0" style="-fx-background-color: #123456;">
+                                       <children>
+                                          <TableView layoutX="3.0" layoutY="141.0" prefHeight="253.0" prefWidth="443.0">
+                                             <columns>
+                                                <TableColumn prefWidth="49.0" text="ID Local" />
+                                                <TableColumn prefWidth="189.0" text="Posição Geografica" />
+                                                <TableColumn prefWidth="203.0" text="Velocidade Permitida" />
+                                             </columns>
+                                          </TableView>
+                                          <GridPane layoutX="1.0" prefHeight="124.0" prefWidth="443.0">
+                                             <children>
+                                                <TextField prefHeight="31.0" prefWidth="308.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label text="Id do Local:" textFill="WHITE" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="LOCAIS DE INFRAÇÕES" textFill="WHITE" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <HBox prefHeight="41.0" prefWidth="306.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="178.0" text="Consultar">
+                                                         <padding>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="183.0" text="Selecionar">
+                                                         <padding>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="137.0" />
+                                                <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="306.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                                <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="451.0" layoutY="292.0" maxWidth="1.7976931348623157E308" prefHeight="393.0" prefWidth="444.0" style="-fx-background-color: #123456;">
+                                       <children>
+                                          <GridPane layoutX="2.0" prefHeight="124.0" prefWidth="440.0">
+                                             <children>
+                                                <TextField prefHeight="24.0" prefWidth="306.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label text="Matricula:" textFill="WHITE" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="AGENTE DE TRANSITO" textFill="WHITE" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <HBox prefHeight="41.0" prefWidth="306.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="178.0" text="Consultar">
+                                                         <padding>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="183.0" text="Selecionar">
+                                                         <padding>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <Label text="Nome:" textFill="WHITE" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField prefHeight="31.0" prefWidth="308.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="137.0" />
+                                                <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="306.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="17.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="54.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                                <RowConstraints fillHeight="false" maxHeight="25.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <TableView layoutX="5.0" layoutY="140.0" prefHeight="253.0" prefWidth="436.0">
+                                             <columns>
+                                                <TableColumn prefWidth="68.0" text="Matricula" />
+                                                <TableColumn prefWidth="135.0" text="Nome" />
+                                                <TableColumn prefWidth="60.0" text="Tempo Serviço" />
+                                                <TableColumn prefWidth="222.0" text="DT Contratação" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </Pane>
+                                    <GridPane layoutX="893.0" layoutY="143.0" prefHeight="556.0" prefWidth="408.0">
+                                       <children>
+                                          <Label text="Chassi:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="PLACA:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Dados Do veiculo " textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Cor:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Dados do Proprietario" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Ano fabric.:" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Nome:" textFill="WHITE" GridPane.rowIndex="8">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CPF:" textFill="WHITE" GridPane.rowIndex="9">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Idade:" textFill="WHITE" GridPane.rowIndex="10">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="DT_nasc.:" textFill="WHITE" GridPane.rowIndex="11">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Sexo:" textFill="WHITE" GridPane.rowIndex="12">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Dados Endereço:" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CEP:" textFill="WHITE" GridPane.rowIndex="15">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Estado:" textFill="WHITE" GridPane.rowIndex="14">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Cidade:" textFill="WHITE" GridPane.rowIndex="16">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Desc.:" textFill="WHITE" GridPane.rowIndex="17">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Categoria:" textFill="WHITE" GridPane.rowIndex="5">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Modelo:" textFill="WHITE" GridPane.rowIndex="6">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="77.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="331.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="218.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="374.0" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <Pane layoutX="514.0" layoutY="14.0" maxWidth="1.7976931348623157E308" prefHeight="276.0" prefWidth="370.0" style="-fx-background-color: #123456;">
+                                       <children>
+                                          <TableView layoutX="7.0" layoutY="123.0" prefHeight="142.0" prefWidth="364.0">
+                                             <columns>
+                                                <TableColumn prefWidth="83.0" text="ID" />
+                                                <TableColumn prefWidth="215.0" text="Descrição" />
+                                             </columns>
+                                          </TableView>
+                                          <GridPane layoutX="7.0" layoutY="7.0" prefHeight="115.0" prefWidth="363.0">
+                                             <children>
+                                                <Label text="ID:" textFill="WHITE" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField editable="false" prefHeight="24.0" prefWidth="100.0" GridPane.rowIndex="2" />
+                                                <Label text="TIPOS DE INFRAÇÕES" textFill="WHITE" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" text="Consultar" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </Button>
+                                                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="183.0" text="Selecionar" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </Button>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="130.0" />
+                                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="210.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="67.0" minHeight="6.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </children>
+                                    </Pane>
+                                    <Button layoutX="187.0" layoutY="216.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="INCLUIR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="280.0" layoutY="216.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="41.0" prefWidth="107.0" text="CANCELAR">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Configurações para Infrações">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="701.0" prefWidth="1200.0">
+                           <children>
+                              <Pane layoutX="6.0" layoutY="20.0" maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="420.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="3.0" layoutY="251.0" prefHeight="353.0" prefWidth="412.0">
+                                       <columns>
+                                          <TableColumn prefWidth="49.0" text="ID" />
+                                          <TableColumn prefWidth="249.0" text="Descrição" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="180.0" prefWidth="412.0">
+                                       <children>
+                                          <Label text="ID:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="DESCRIÇÃO:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="84.0" prefWidth="268.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="TIPOS DE INFRAÇÕES" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="87.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="103.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="10.0" layoutY="188.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="440.0" layoutY="20.0" maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="420.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="4.0" layoutY="252.0" prefHeight="354.0" prefWidth="412.0">
+                                       <columns>
+                                          <TableColumn prefWidth="49.0" text="ID Local" />
+                                          <TableColumn prefWidth="114.0" text="Posição Geografica" />
+                                          <TableColumn prefWidth="194.0" text="Velocidade Permitida" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="4.0" layoutY="14.0" prefHeight="158.0" prefWidth="412.0">
+                                       <children>
+                                          <Label text="Posição Geografica:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Velocidade Permitida (Km/h)" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="Id do Local:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="LOCAIS DE INFRAÇÕES" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="217.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="130.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="232.0" minWidth="10.0" prefWidth="232.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="10.0" layoutY="192.0">
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="873.0" layoutY="20.0" maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="420.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="4.0" layoutY="252.0" prefHeight="353.0" prefWidth="412.0">
+                                       <columns>
+                                          <TableColumn prefWidth="68.0" text="Matricula" />
+                                          <TableColumn prefWidth="135.0" text="Nome" />
+                                          <TableColumn prefWidth="60.0" text="Tempo Serviço" />
+                                          <TableColumn prefWidth="222.0" text="DT Contratação" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane alignment="TOP_CENTER" layoutX="4.0" layoutY="14.0" prefHeight="158.0" prefWidth="412.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="130.0" />
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="232.0" minWidth="10.0" prefWidth="232.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Nome:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Matricula:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Data de Contratacao:" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="31.0" prefWidth="217.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label text="Tempo de Serviço:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="AGENTES DE TRANSITO" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <GridPane layoutX="10.0" layoutY="192.0">
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                              <Button layoutX="14.0" layoutY="638.0" mnemonicParsing="false" text="LIMPAR CAMPOS" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </content></TitledPane>
+      <TitledPane animated="false" layoutX="10.0" layoutY="10.0" prefHeight="782.0" prefWidth="1200.0" text="Pessoas">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Pessoas">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="1301.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="14.0" layoutY="258.0" prefHeight="354.0" prefWidth="1285.0">
+                                       <columns>
+                                          <TableColumn prefWidth="115.0" text="CPF" />
+                                          <TableColumn prefWidth="567.0" text="Nome" />
+                                          <TableColumn prefWidth="206.0" text="Data de Nascimento" />
+                                          <TableColumn prefWidth="396.0" text="Telefones" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="4.0" layoutY="23.0" prefHeight="150.0" prefWidth="1272.0">
+                                       <children>
+                                          <Label text="Data de Nascimento:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Nome:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="CPF:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="AGENTES DE TRANSITO" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="374.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label text="Idade:" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Label text="Sexo:" textFill="WHITE" GridPane.columnIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CEP:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Endereço:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="CIdade:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                          <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                          <ChoiceBox layoutX="1026.0" layoutY="100.0" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                          <ChoiceBox layoutX="1026.0" layoutY="100.0" prefWidth="150.0" GridPane.columnIndex="3" />
+                                          <Label layoutX="719.0" layoutY="107.0" text="Estado:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefHeight="17.0" prefWidth="63.0" text="Telefones:" textFill="WHITE" GridPane.columnIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="408.0" minWidth="10.0" prefWidth="233.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="468.0" minWidth="0.0" prefWidth="407.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="468.0" minWidth="10.0" prefWidth="407.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="468.0" minWidth="10.0" prefWidth="407.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="468.0" minWidth="10.0" prefWidth="407.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="251.0" layoutY="185.0">
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <TextArea layoutX="989.0" layoutY="125.0" prefHeight="121.0" prefWidth="298.0" text="PARA ADICIONAR MAIS DE UM TELEFONE&#10;INSERIR &quot; ; &quot;&#10;EXEMPLO&#10;(55)32016598;(55)32018456" />
+                                 </children>
+                              </Pane>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Agentes de Transito">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="1301.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="4.0" layoutY="252.0" prefHeight="354.0" prefWidth="1294.0">
+                                       <columns>
+                                          <TableColumn prefWidth="115.0" text="Matricula" />
+                                          <TableColumn prefWidth="567.0" text="Nome" />
+                                          <TableColumn prefWidth="206.0" text="Data de Contratação" />
+                                          <TableColumn prefWidth="404.0" text="Tempo de Serviço" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="4.0" layoutY="23.0" prefHeight="149.0" prefWidth="658.0">
+                                       <children>
+                                          <Label text="Data de Contratação:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Nome:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField prefHeight="31.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="Matricula:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="AGENTES DE TRANSITO" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField prefHeight="31.0" prefWidth="374.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label text="Tempo de serviço:" textFill="WHITE" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="408.0" minWidth="10.0" prefWidth="233.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="468.0" minWidth="0.0" prefWidth="407.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="251.0" layoutY="185.0">
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Configurações para Pessoas">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutY="7.0" maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="420.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="3.0" layoutY="251.0" prefHeight="353.0" prefWidth="412.0">
+                                       <columns>
+                                          <TableColumn prefWidth="49.0" text="ID" />
+                                          <TableColumn prefWidth="249.0" text="Nome" />
+                                          <TableColumn prefWidth="112.0" text="UF" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="180.0" prefWidth="412.0">
+                                       <children>
+                                          <Label text="ID:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Cidades" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Nome:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="UF:" textFill="WHITE" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="87.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="10.0" layoutY="188.0">
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="429.0" layoutY="7.0" maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="420.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="3.0" layoutY="251.0" prefHeight="353.0" prefWidth="412.0">
+                                       <columns>
+                                          <TableColumn prefWidth="49.0" text="ID" />
+                                          <TableColumn prefWidth="249.0" text="Nome" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="180.0" prefWidth="412.0">
+                                       <children>
+                                          <Label text="ID:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Estados" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Nome:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="87.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="10.0" layoutY="188.0">
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="856.0" layoutY="7.0" maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="420.0" style="-fx-background-color: #123456;">
+                                 <children>
+                                    <TableView layoutX="3.0" layoutY="251.0" prefHeight="353.0" prefWidth="412.0">
+                                       <columns>
+                                          <TableColumn prefWidth="49.0" text="ID" />
+                                          <TableColumn prefWidth="249.0" text="Descrição" />
+                                       </columns>
+                                    </TableView>
+                                    <GridPane layoutX="3.0" layoutY="8.0" prefHeight="180.0" prefWidth="412.0">
+                                       <children>
+                                          <Label text="ID:" textFill="WHITE" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Sexo" textFill="WHITE" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Descrição:" textFill="WHITE" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField editable="false" prefHeight="31.0" prefWidth="221.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="87.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="323.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <GridPane layoutX="10.0" layoutY="188.0">
+                                       <children>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Excluir" GridPane.columnIndex="2">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar" GridPane.columnIndex="3">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Alteral" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Incluir">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Consultar">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </content>
+      </TitledPane>
+  </panes>
+</Accordion>

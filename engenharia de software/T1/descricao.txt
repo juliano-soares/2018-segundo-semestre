@@ -1,0 +1,8 @@
+Enunciado: em grupos de no máximo 4 pessoas, escolher um tema de projeto e desenvolver os seguintes artefatos:
+
+1 - Documento de visão
+
+2 - Diagrama UML de Casos de Uso. (Use uma ferramenta UML para isso) - Engenharia de requisitos
+
+3 - DRS
+Entrega: 18/09/2018 - Via Moodle. Precisa apresentar para toda a turma também.

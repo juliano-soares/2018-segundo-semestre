@@ -1,0 +1,6 @@
+Artefatos a serem produzidos e entregues:
+[1] Diagrama UML de Sequência
+[2] Diagrama UML de Atividades
+Data da entrega:
+20/11/2018 (previsão)
+* entrega via moodle.

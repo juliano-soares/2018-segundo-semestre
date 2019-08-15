@@ -1,0 +1,41 @@
+Trabalho da Disciplina
+A partir do estudo de caso encaminhado ao grupo (no máximo 2) deverá ser implementado o diagrama entidade-relacionamento, gerar o modelo físico, criar as tabelas em um banco de dados e popular as tabelas com informações pertinentes.
+
+Os Banco de dados que poderão ser utilizados:
+
+MySQL 
+MongoDB
+SQLLite
+O grupo que utilizar MySQL ou SQLLite ou PostgreSQL deverá pesquisar e implementar no modelo do banco de dados as seguintes funções:
+
+auto incremento - ( http://www.1keydata.com/sql/auto-increment.html )
+view - ( http://en.wikipedia.org/wiki/View_%28SQL%29 )
+triggers (gatilhos - http://en.wikipedia.org/wiki/Database_trigger )
+Popular as tabelas com elementos que permitam a realização de consultas e testes dos triggers.
+Implementar um programa para Incluir, alterar, excluir e consultar elementos de uma tabela utilizando uma linguagem de sua escolha;
+Implementar um programa para Incluir, alterar, excluir e consultar elementos de um relacionamento utilizando uma linguagem de sua escolha.
+O grupo que utilizar MongoDB deverá pesquisar e implementar no modelo do banco de dados as seguintes funções:
+
+utilização do NODE.JS 
+Popular as tabelas com elementos que permitam a realização de consultas e testes dos dados
+Implementar um programa para Incluir, alterar, excluir e consultar elementos de uma tabela utilizando Node.JS. 
+Implementar um programa para Incluir, alterar, excluir e consultar elementos de um relacionamento utilizando Node.JS. 
+Links interessantes:
+MongoDB University
+NodeJS Brasil
+As aulas dos dias 26 e 28/11/2018 serão para esclarecer as dúvidas do trabalho e antecipar entrega.
+
+O trabalho deverá ser apresentado nos dias 03 e 05/12/2018, na sala 383 do anexo B do CT
+
+Avaliação:
+
+Modelagem de Dados (Diagrama de Classe);
+Arquivos de mapeamento;
+Programas para realizar manutenção (Incluir, alterar, excluir e consultar) um elemento em uma tabela
+Programa para incluir e excluir elementos de um relacionamento
+Relatório técnico contendo:
+Nome dos participantes do Grupo;
+Descrição do Trabalho;
+Diagrama de Classe;
+Funções Implementadas de acordo com o banco de dados escolhido
+Descrição das facilidades e dificuldades no desenvolvimento do trabalho.

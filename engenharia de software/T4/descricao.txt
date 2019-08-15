@@ -1,0 +1,23 @@
+Trabalho de Pesquisa																									
+Enunciado: escolher uma ferramenta de teste de software e descrever como ela funciona citando exemplos de código, isto é, na prática.																									
+Entrega: 04/12/2018																									
+Regras: grupos de no máximo 5 pessoas;Apresentar. Submeter via Moodle até as 23h55 do dia 03/12/2018.																									
+Abaixo encontram-se as ferramentas que os grupos podem escolher. Lembrando que não pode haver mais de um grupo pesquisando a mesma ferramenta.
+Enviem um mail com a ferramenta escolhida																									
+Ferrramenta																									
+TestNG																									
+Selenium Webdriver grupo de Gustavo Felix Do Nascimento																									
+Jdave																									
+Junit grupo 6																									
+Maven Luiene, Marcelo, Diego e Jairo - ok																									
+Jasmine Grupo de Pedro Minini - ok																									
+Apache JMeter Grupo 1 (Júlia Acosta, Eduardo Nedel, Nikolas Corrêa, Gustavo Fantinel)																									
+Tellurium																									
+qTest																									
+TestingWhiz																									
+TestComplete																									
+Ranorex - grupo 7, grupo 4																									
+Sahi																									
+Tosca Testsuite																									
+Telerik TestStudio																									
+WatiN
